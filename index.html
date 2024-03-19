@@ -9,6 +9,27 @@
       src=" https://kit.fontawesome.com/a284a80ab3.js "
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Fashi template</title>
   </head>
@@ -273,6 +294,36 @@
           <span class="dot" onclick="currentSlide(2)"></span>
         </div> -->
       </div>
+
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./imgs/banner-3.jpg.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./imgs/insta-1.jpg.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./imgs/banner-3.jpg.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
       <div class="banners" style="padding: 4rem 3rem">
         <div
           class="contanr"
@@ -410,19 +461,19 @@
             </div>
             <div class="countdown-timer" id="countdown">
               <div class="cd-item">
-                <span>30</span>
+                <span id="days"></span>
                 <p>Days</p>
               </div>
               <div class="cd-item">
-                <span>03</span>
+                <span id="hours"></span>
                 <p>Hrs</p>
               </div>
               <div class="cd-item">
-                <span>33</span>
+                <span id="mins"></span>
                 <p>Mins</p>
               </div>
               <div class="cd-item">
-                <span>48</span>
+                <span id="secs"></span>
                 <p>Secs</p>
               </div>
             </div>
@@ -432,18 +483,114 @@
       </section>
     </div>
     <div class="mens-ads">
-      <div class="mens-carrousel"></div>
-      <div
-        class="begmanimg"
-        style="display: flex; justify-content: center; align-items: center"
-      >
-        <img src="./imgs/man-large.jpg.webp" alt="" />
-        <h2>Men’s</h2>
-
-        <a style="margin-top: 10vh; padding: 10px" class="more"
-          >Discover More</a
-        >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner card">
+                <div class="carousel-item card active">
+                  <img
+                    src="./imgs/mens-cloth.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item card">
+                  <img
+                    src="./imgs/mens-cloth.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item card">
+                  <img
+                    src="./imgs/man-large.jpg.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>
+                      Some representative placeholder content for the third
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="begmanimg">
+              <img src="./imgs/man-large.jpg.webp" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="mens-carrousel"></div>
     </div>
 
     <div class="insta-posts">
@@ -646,8 +793,9 @@
                 placeholder="Enter Your Email"
                 name=""
                 id=""
+                class="finish-him"
               />
-              <button style="">Subscribe</button>
+              <button>Subscribe</button>
             </div>
           </dev>
         </div>
