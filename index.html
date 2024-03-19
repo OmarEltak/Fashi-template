@@ -1,309 +1,663 @@
+<!-- bootstrap link is disorganizing the btn  -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fashi</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <script
       src=" https://kit.fontawesome.com/a284a80ab3.js "
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <title>Fashi template</title>
   </head>
   <body>
     <div class="header">
-      <nav class="nav">
-        <div class="mail">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          hello.colorlib@gmail.com
-        </div>
-
-        <div class="phone">
-          <i class="fa fa-phone" aria-hidden="true"></i> +65 11.188.888
-        </div>
-        <div class="otherIcons">
-          <i class="fa fa-facebook-f" aria-hidden="true"></i>
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-          <i class="fa fa-pinterest" aria-hidden="true"></i>
-        </div>
-        <div class="flag">
-          <img src="./imgs/americaflag-1.jpg" alt="language" /> English
-        </div>
-        <div class="login">
-          <i class="fa fa-user" aria-hidden="true"></i> Login
-        </div>
-      </nav>
-    </div>
-    <div class="inner-header">
-      <div class="fashiLogo" style="margin-left: 4rem">
-        <img src="./imgs/fashi.logo.png" alt="fashi logo" />
-      </div>
-      <div class="catagoryAndsearch" style="display: flex">
-        <button type="button" class="catButton">
-          <h5>
-            <span
-              style="
-                padding-right: 10px;
-                border-right: 1px solid #e5e5e5;
-                font-size: 14px;
-              "
-              >All Categories</span
-            >
-          </h5>
-        </button>
-        <input type="text" placeholder="What do you need?" />
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </div>
-      <div
-        class="iconsAndPrice"
-        style="
-          display: flex;
-          gap: 10px;
-          margin-right: 4rem;
-          font-size: large;
-          font-weight: 800;
-          gap: 10px;
-          align-items: center;
-        "
-      >
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        <div class="price">$150.00</div>
-      </div>
-    </div>
-    <div class="last-header">
-      <div
-        class="depart-navbar"
-        style="width: 100%; display: grid; grid-template-columns: 4fr 4fr"
-      >
-        <div class="depart-button">
-          <div
-            class="depart-text"
-            style="padding: 1rem 3rem; background-color: #3b3b3b"
-          >
-            <i class="fa-solid fa-bars"></i>
-            <span style="margin-left: 1rem">ALL DEPARTMENTS </span>
+      <div class="first-header">
+        <div class="left-side">
+          <div class="mail-service">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            hello.colorlib@gmail.com
+          </div>
+          <div class="phone-service">
+            <i class="fa fa-phone"></i>
+            +65 11.188.888
           </div>
         </div>
-        <div class="navElements" style="padding: 1rem 8rem; padding-left: 8rem">
-          <li>Home</li>
-          <li>Shop</li>
-          <li>Collection</li>
-          <li>Blog</li>
-          <li>Contact</li>
-          <li>Pages</li>
+        <div class="right-side">
+          <div class="top-social">
+            <a href="#">
+              <i class="fa fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
+            <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+            <a href="#"> <i class="fa fa-pinterest" aria-hidden="true"></i> </a>
+          </div>
+          <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
+          <div class="select-lan">
+            <img src="./imgs/americaflag-1.jpg" alt="" />
+            English
+          </div>
         </div>
       </div>
-      <div
-        class="mobile-menu"
-        style="
-          background-color: #4c4c4c;
-          width: 100%;
-          height: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-        "
-      >
-        <div class="mobile-menu-button" style="margin-right: 1rem">
-          <a
-            style="
-              background-color: #252525;
-              padding: 0.5rem 1.2rem;
-              border-radius: 7px;
-            "
-          >
-            Menu
-            <i class="fa-solid fa-bars"></i>
-          </a>
+      <div class="mid-header">
+        <div class="logo">
+          <img src="./imgs/fashi.logo.png" alt="" />
         </div>
-      </div>
-    </div>
-    <section class="content">
-      <div class="changing-ads">
-        <div class="changing-ad-1" style="position: relative">
-          <img
-            src="./imgs/akid hero-2.jpg"
-            alt=""
-            style="
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: top center;
-              height: 725px;
-              padding-top: 50px;
-              width: 120%;
-              margin-left: -21%;
-            "
-          />
-          <div class="ad1-text" style="position: absolute; top: 100px">
-            <p style="color: orange">Bag.Kids</p>
-            <h1>White friday</h1>
-            <p
-              style="
-                font-size: 16px;
-                font-family: sans-serif;
-                color: #636363;
-                font-weight: 400;
-                line-height: 26px;
-                margin: 0 0 15px 0;
-              "
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />
-              sed do eiusmod tempor incididunt ut labore et dolore
-            </p>
-            <button style="background-color: orange; color: white">
-              <h3>Shop now</h3>
-            </button>
-          </div>
-        </div>
-        <div class="changing-ad-2"></div>
-      </div>
-      <div
-        class="gender-selection"
-        style="
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-          grid-row-gap: 1rem;
-          grid-column-gap: 1rem;
-          justify-items: center;
-          position: relative;
-        "
-      >
-        <div class="men" style="vertical-align: middle; border-style: none">
-          <img src="./imgs/mens-cloth.webp" alt="" />
-          <h2>Men</h2>
-        </div>
-        <div class="women" style="vertical-align: middle; border-style: none">
-          <img src="./imgs/womens cloth.webp" alt="" />
-          <div class="div">
-            <h2>Women</h2>
-          </div>
-        </div>
-        <div
-          class="children"
-          style="vertical-align: middle; border-style: none"
-        >
-          <img src="./imgs/banner-3.jpg.webp" alt="" />
-          <h2>Children</h2>
-        </div>
-      </div>
-    </section>
-    <div
-      class="partner-logo"
-      style="
-        margin-left: -1rem;
-        padding-right: 1rem rem;
-        width: 100%;
-        background-color: #303030;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      "
-    >
-      <img src="./imgs/111.webp" alt="" />
-      <img src="./imgs/222.webp" alt="" />
-      <img src="./imgs/333.webp" alt="" />
-      <img src="./imgs/444.webp" alt="" />
-      <img src="./imgs/[[.webp" alt="" />
-    </div>
-    <div
-      class="footer"
-      style="
-        top: 0;
-        left: 0;
-        background: #191919;
-        padding-top: 75px;
-        color: white;
-        display: flex;
-        margin-left: -1rem;
-      "
-    >
-      <div
-        class="col"
-        style="
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          margin-right: -15px;
-          margin-left: -15px;
-        "
-      >
-        <div class="col-1">
-          <div class="heading"><img src="./imgs/fashi.logo.png" alt="" /></div>
-          <div class="col-text">
-            <div class="addr">Address: 60-49 Road 11378 New York</div>
-            <div class="pho">Phone: +65 11.188.888</div>
-            <div class="maill">Email: hello.colorlib@gmail.com</div>
-          </div>
-          <div class="iconic" style="display: flex">
-            <i class="fa fa-facebook-f" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-            <i class="fa fa-pinterest" aria-hidden="true"></i>
-          </div>
-        </div>
-        <div class="col-2">
-          <h5 class="heading">Information</h5>
-          <div class="col-text">
-            <div class="dev">About Us</div>
-            <div class="dev">Checkout</div>
-            <div class="dev">Contact</div>
-            <div class="dev">Serivius</div>
-          </div>
-        </div>
-        <div class="col-3">
-          <h5 class="heading">My Account</h5>
-          <div class="col-text">
-            <div class="dev">My Account</div>
-            <div class="dev">Contact</div>
-
-            <div class="dev">Shopping Cart</div>
-            <div class="dev">Shop</div>
-          </div>
-        </div>
-        <div class="col-4">
-          <h5 class="heading">Join Our Newsletter Now</h5>
-          <div class="col-text">
-            <div class="dev">
-              Get E-mail updates about our latest shop and special offers.
-            </div>
-            <div class="subscribe-field">
-              <input
-                type="text"
-                style="
-                  color: #b2b2b2;
-                  background: #303030;
-                  width: 100%;
-                  height: 46px;
-                  font-size: 16px;
-                  border: none;
-                  padding-left: 20px;
-                "
-              />
-              <button
-                style="
-                  display: inline-block;
-                  color: #ffffff;
-                  background: #e7ab3c;
-                  font-size: 13px;
-                  font-weight: 700;
-                  text-transform: uppercase;
-                  border: 1px solid #e7ab3c;
-                  position: absolute;
-                  right: 0;
-                  top: 0;
-                  padding: 13px 20px 12px;
-                  cursor: pointer;
-                "
+        <div class="col-lg-7 col-md-7">
+          <div class="advanced-search">
+            <button type="button" class="category-btn">
+              <span style="border-right: 1px solid #ebebeb"
+                >All <span style="margin-right: 0.4rem">Categories</span></span
               >
-                subscribe
+            </button>
+            <div class="input-group">
+              <input type="text" placeholder="What do you need?" />
+              <button type="button">
+                <i class="fa fa-search" aria-hidden="true"></i>
               </button>
             </div>
           </div>
         </div>
+        <div
+          class="price"
+          style="font-size: large; font-weight: 600; display: inline-block"
+        >
+          <i class="fa-regular fa-heart"></i>
+          <i
+            class="fa fa-shopping-bag"
+            style="margin-right: 10px"
+            aria-hidden="true"
+          ></i>
+          <i class="fa fa-dollar" aria-hidden="true"></i>
+          150
+        </div>
+      </div>
+      <div class="last-header">
+        <div class="nav-depart">
+          <div class="depart-btn">
+            <i class="fa-solid fa-bars"></i>
+            <span
+              style="
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-left: 16px;
+                color: white;
+              "
+              >All departments</span
+            >
+          </div>
+          <div class="icco">
+            <i>Home</i><i>shop</i><i>collection</i><i>blog</i><i>contact</i
+            ><i>page</i>
+          </div>
+        </div>
+        <div class="sec-nav-menu">
+          <a class="slicknav_btn"
+            ><span
+              style="
+                display: block;
+                line-height: 1.188em;
+                float: left;
+                color: #fff;
+                font-weight: 700;
+                margin-right: 10px;
+                text-shadow: 0 1px 3px #000;
+              "
+              >menu </span
+            ><span><i class="fa-solid fa-bars"></i></span
+          ></a>
+        </div>
       </div>
     </div>
+    <div class="content">
+      <div class="big-ads">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img
+              src="./imgs/akid hero-2.jpg"
+              style="
+                width: 100%;
+                height: 700px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;
+              "
+            />
+
+            <div
+              class="text"
+              style="text-align: start; /* position: absolute; */"
+            >
+              <p
+                style="
+                  color: #e7ab3c;
+                  font-size: 12px;
+                  font-weight: 700;
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+                  line-height: 28px;
+                  display: inline-block;
+                  position: relative;
+                "
+              >
+                BAG, KIDS
+              </p>
+              <h1
+                class="friday"
+                style="
+                  color: #252525;
+                  font-weight: 700;
+                  margin-bottom: 6px;
+                  position: relative;
+                "
+              >
+                Black friday
+              </h1>
+              <p
+                style="
+                  font-size: 16px;
+                  color: #636363;
+                  font-weight: 400;
+                  line-height: 26px;
+                  margin: 0 0 15px 0;
+                "
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
+              </p>
+              <a
+                href="#"
+                class="primary-btn"
+                style="
+                  display: inline-block;
+                  font-size: 14px;
+                  font-weight: 700;
+                  padding: 12px 30px;
+                  color: #ffffff;
+                  background: #e7ab3c;
+                  text-transform: uppercase;
+                  text-decoration: none;
+                "
+                >Shop now</a
+              >
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="./imgs/hero-1.jpg.webp"
+              style="
+                width: 100%;
+                height: 700px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;
+              "
+            />
+            <div
+              class="text"
+              style="text-align: start; /* position: absolute; */"
+            >
+              <p
+                style="
+                  color: #e7ab3c;
+                  font-size: 12px;
+                  font-weight: 700;
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+                  line-height: 28px;
+                  display: inline-block;
+                  position: relative;
+                "
+              >
+                BAG, KIDS
+              </p>
+              <h1
+                class="friday"
+                style="
+                  color: #252525;
+                  font-weight: 700;
+                  margin-bottom: 6px;
+                  position: relative;
+                "
+              >
+                Black friday
+              </h1>
+              <p
+                style="
+                  font-size: 16px;
+                  color: #636363;
+                  font-weight: 400;
+                  line-height: 26px;
+                  margin: 0 0 15px 0;
+                "
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
+              </p>
+              <a
+                href="#"
+                class="primary-btn"
+                style="
+                  display: inline-block;
+                  font-size: 14px;
+                  font-weight: 700;
+                  padding: 12px 30px;
+                  color: #ffffff;
+                  background: #e7ab3c;
+                  text-transform: uppercase;
+                  text-decoration: none;
+                "
+                >Shop now</a
+              >
+            </div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <!-- <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div> -->
+      </div>
+      <div class="banners" style="padding: 4rem 3rem">
+        <div
+          class="contanr"
+          style="
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+          "
+        >
+          <div
+            class="row"
+            style="
+              row-gap: 2.5vh;
+              display: flex;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+              margin-right: -15px;
+              margin-left: -15px;
+            "
+          >
+            <div class="col-lg-4">
+              <div class="single-banner">
+                <img src="./imgs/mens-cloth.webp" alt="" />
+                <div class="inner-text">
+                  <h4>Men’s</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="single-banner">
+                <img src="./imgs/womens cloth.webp" alt="" />
+                <div class="inner-text">
+                  <h4>Women’s</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="single-banner">
+                <img src="./imgs/banner-3.jpg.webp" alt="" />
+                <div class="inner-text">
+                  <h4>Kid’s</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <section class="women-ads">
+        <div class="women-clothes">
+          <div class="col-lg-3">
+            <img src="./imgs/women-large.jpg.webp" alt="" />
+          </div>
+          <div class="col-lg-8">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              Indicators
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+
+              Wrapper for slides
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img
+                    src="./imgs/women-1.jpg.webp"
+                    alt="Los Angeles"
+                    style="width: 100%"
+                  />
+                </div>
+
+                <div class="item">
+                  <img
+                    src="./imgs/women-3.jpg.webp"
+                    alt="Chicago"
+                    style="width: 100%"
+                  />
+                </div>
+
+                <div class="item">
+                  <img
+                    src="./imgs/women-4.jpg.webp"
+                    alt="New york"
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+
+              Left and right controls
+              <a
+                class="left carousel-control"
+                href="#myCarousel"
+                data-slide="prev"
+              >
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="right carousel-control"
+                href="#myCarousel"
+                data-slide="next"
+              >
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section
+        class="deal-of-week set-bg spad"
+        style="background-image: url(./imgs/time-bg.jpg.webp)"
+      >
+        <div class="container">
+          <div class="col-lg-6 text-center">
+            <div class="section-title">
+              <h2>Deal <span class="fstspan">of The</span> Week</h2>
+              <p style="margin-top: 3vh">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                ipsum dolor sit amet, consectetur adipisicing elit
+              </p>
+              <div class="product-price">
+                $35.00
+                <span style="font-size: 16px">/ HanBag</span>
+              </div>
+            </div>
+            <div class="countdown-timer" id="countdown">
+              <div class="cd-item">
+                <span>30</span>
+                <p>Days</p>
+              </div>
+              <div class="cd-item">
+                <span>03</span>
+                <p>Hrs</p>
+              </div>
+              <div class="cd-item">
+                <span>33</span>
+                <p>Mins</p>
+              </div>
+              <div class="cd-item">
+                <span>48</span>
+                <p>Secs</p>
+              </div>
+            </div>
+            <a href="#" class="primary-btn">Shop Now</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="mens-ads">
+      <div class="mens-carrousel"></div>
+      <div
+        class="begmanimg"
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <img src="./imgs/man-large.jpg.webp" alt="" />
+        <h2>Men’s</h2>
+
+        <a style="margin-top: 10vh; padding: 10px" class="more"
+          >Discover More</a
+        >
+      </div>
+    </div>
+
+    <div class="insta-posts">
+      <div class="insta-img">
+        <img src="./imgs/insta-1.jpg.webp" alt="" />
+        <div class="show" style="">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <a href="#">my collection</a>
+        </div>
+      </div>
+      <div class="insta-img">
+        <img src="./imgs/insta-1.jpg.webp" alt="" />
+        <div class="show" style="">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <a href="#">my collection</a>
+        </div>
+      </div>
+      <div class="insta-img">
+        <img src="./imgs/insta-1.jpg.webp" alt="" />
+        <div class="show" style="">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <a href="#">my collection</a>
+        </div>
+      </div>
+      <div class="insta-img">
+        <img src="./imgs/insta-1.jpg.webp" alt="" />
+        <div class="show" style="">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <a href="#">my collection</a>
+        </div>
+      </div>
+      <div class="insta-img">
+        <img src="./imgs/insta-1.jpg.webp" alt="" />
+        <div class="show" style="">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <a href="#">my collection</a>
+        </div>
+      </div>
+      <div class="insta-img">
+        <img src="./imgs/insta-1.jpg.webp" alt="" />
+        <div class="show" style="">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <a href="#">my collection</a>
+        </div>
+      </div>
+    </div>
+    <div class="our-blog">
+      <h1>From<span> The </span>Blog</h1>
+      <div class="articles">
+        <div class="article">
+          <div class="article-img">
+            <img src="./imgs/latest-2.jpg.webp" alt="" />
+          </div>
+          <div class="article-icons">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            May 4,2019
+            <i
+              class="fa fa-comment-o"
+              style="margin-left: 20px"
+              aria-hidden="true"
+            ></i>
+            5
+          </div>
+          <div class="article-header">
+            <a href="#">
+              <h3>The Best Street Style From London Fashion Week</h3>
+            </a>
+          </div>
+          <div class="article-text">
+            <p>
+              Sed quia non numquam modi tempora indunt ut labore et dolore
+              magnam aliquam quaerat
+            </p>
+          </div>
+        </div>
+        <div class="article">
+          <div class="article-img">
+            <img src="./imgs/latest-2.jpg.webp" alt="" />
+          </div>
+          <div class="article-icons">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            May 4,2019
+            <i
+              class="fa fa-comment-o"
+              style="margin-left: 20px"
+              aria-hidden="true"
+            ></i>
+            5
+          </div>
+          <div class="article-header">
+            <a href="#">
+              <h3>The Best Street Style From London Fashion Week</h3>
+            </a>
+          </div>
+          <div class="article-text">
+            <p>
+              Sed quia non numquam modi tempora indunt ut labore et dolore
+              magnam aliquam quaerat
+            </p>
+          </div>
+        </div>
+        <div class="article">
+          <div class="article-img">
+            <img src="./imgs/latest-2.jpg.webp" alt="" />
+          </div>
+          <div class="article-icons">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            May 4,2019
+            <i
+              class="fa fa-comment-o"
+              style="margin-left: 20px"
+              aria-hidden="true"
+            ></i>
+            5
+          </div>
+          <div class="article-header">
+            <a href="#">
+              <h3>The Best Street Style From London Fashion Week</h3>
+            </a>
+          </div>
+          <div class="article-text">
+            <p>
+              Sed quia non numquam modi tempora indunt ut labore et dolore
+              magnam aliquam quaerat
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="before-last">
+      <div class="car">
+        <i class="fa-solid fa-truck-moving"></i>
+        <div class="before-last-text">
+          <h5>FREE SHIPPING</h5>
+          <div class="ptext">For all order over 99$</div>
+        </div>
+      </div>
+      <div class="car">
+        <i class="fa-solid fa-truck-moving"></i>
+        <div class="before-last-text">
+          <h5>FREE SHIPPING</h5>
+          <div class="ptext">For all order over 99$</div>
+        </div>
+      </div>
+      <div class="car">
+        <i class="fa-solid fa-truck-moving"></i>
+        <div class="before-last-text">
+          <h5>FREE SHIPPING</h5>
+          <div class="ptext">For all order over 99$</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="foot1">
+        <div class="foot-head">
+          <img src="./imgs/fashi.logo.png" alt="" />
+        </div>
+        <div class="foot-text">
+          <div>Address: 60-49 Road 11378 New York</div>
+          <div>Phone: +65 11.188.888</div>
+          <div>Email:</div>
+          <div>hello.colorlib@gmail.com</div>
+          <div class="icoons">
+            <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="foot2">
+        <div class="foot-head">Information</div>
+        <div class="foot-text">
+          <dev>About Us </dev>
+          <dev> Checkout</dev>
+          <dev> Contact </dev>
+          <dev>Service</dev>
+        </div>
+      </div>
+      <div class="foot3">
+        <div class="foot-head">My Account</div>
+        <div class="foot-text">
+          <dev>My Account </dev>
+          <dev> Contact </dev>
+          <dev>Shopping Cart </dev>
+          <dev>Shop</dev>
+        </div>
+      </div>
+      <div class="foot4">
+        <div class="foot-head">Join Our Newsletter Now</div>
+        <div class="foot-text">
+          <dev
+            >Get E-mail updates about our latest shop and special offers.</dev
+          >
+          <dev>
+            <div class="subscribe-container">
+              <input
+                type="text"
+                style="color: #636363"
+                placeholder="Enter Your Email"
+                name=""
+                id=""
+              />
+              <button style="">Subscribe</button>
+            </div>
+          </dev>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
